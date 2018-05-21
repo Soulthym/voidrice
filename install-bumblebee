@@ -1,0 +1,20 @@
+# first install and configure arch with archfi:
+	https://github.com/MatMoul/archfi
+# then reboot to your installed arch and install this:
+	https://github/com/LukeSmithxyz/LARBS
+# then replace Luke's config by my own (BE CAREFUL! He uses a US keyboard layout and I personally need a french one... it is solved after this step tho but good luck typing all this!):
+cd
+git remote set-url origin https://github.com/Soulthym/voidrice.git
+git pull
+# now we'll install bumblebee:
+
+sudo pacman -S bumblebee mesa nvidia xf86-video-intel mesa-demos bbswitch
+# by default bumblebee doesn't use bbswitch... edit /etc/bumblebee/bumblebee.conf and change the PMMethod in the [driver-nvidia] section to bbswitch:
+sudo vim /etc/bumblebee/bumblebee.conf
+"[driver-nvidia]
+KernelDriver=nvidia
+- PMMethod=auto
++ PMMethod=bbtwitch"
+
+#install cuda:
+sudo pacman -S nvidia-utils cuda cudnn
