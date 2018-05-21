@@ -94,3 +94,4 @@ alias bigfor="mpc seek +120"
 
 hello-larbs() { sed -i -e '/larbs.png/,$d' ~/.config/i3/config ;}
 source ~/.bash_shortcuts
+source /home/soulthym/.bash_shortcuts

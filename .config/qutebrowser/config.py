@@ -1581,3 +1581,4 @@ config.bind('y', 'prompt-accept yes', mode='prompt')
 
 ## Bindings for register mode
 config.bind('<Escape>', 'leave-mode', mode='register')
+config.source('shortcuts.py')

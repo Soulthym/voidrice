@@ -3,7 +3,7 @@
 # This script is called by i3 on startup.
 
 # Map the caps lock key to super...
-setxkbmap -layout us -variant altgr-intl -option caps:super
+setxkbmap -layout fr # us -variant altgr-intl -option caps:super
 # If you don't want a us international keyboard, rather whatever keyboard
 # you set in your installation, comment out the above line and uncomment
 # the one below.
@@ -15,3 +15,4 @@ xcape -e 'Super_L=Escape'
 # Map the menu button to right super as well.
 xmodmap -e 'keycode 135 = Super_R'
 #keycode 135 = Super_R NoSymbol Super_R
+
